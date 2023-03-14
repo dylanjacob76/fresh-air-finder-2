@@ -1,0 +1,252 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    right:0;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1507181080368-cc2195abcde1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    background-position-x: left;
+    background-position-x:left;
+    margin: 0 auto;
+}
+
+/* for the Fresh Air Finder h1 */
+.title {
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    color:rgb(255, 255, 255);
+    font-size: 65px;
+    text-shadow: 2px 2px 8px #aaaaaa;
+    margin-top: 100px;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.sectionCenter {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* centers the heroes including the search bars */
+.hero{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.director {
+    color: #fff;
+}
+
+.director:hover {
+    color: #fff;
+}
+
+/* style for the history div */
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 20%;
+    margin: 0 auto;
+}
+
+.divHistory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style for the history buttons */
+.historyBtn {
+    color: black;
+    margin: 4px;
+}
+
+/* style for recent searches */
+.recentSearches {
+    text-align: center;
+    border-bottom:rgb(19, 48, 57) solid;
+    font-size: 24px;
+    margin: 8px;
+}
+
+/* style for reset button */
+.reset {
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+/* changes the main header background image */
+.is-halfheight {
+    background-image: url('https://images.unsplash.com/photo-1609788063095-d71bf3c1f01f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 56px;
+    height: 100vh;
+}
+
+.middle-tile {
+    background-image: url('https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+
+#middle-image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bottom-tile {
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#parks-list {
+    width: 100%;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+li {
+    padding: 2px;
+    margin: 1.5px;
+}
+
+/* hides the dropdown arrow */
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-color: #c45f37;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: rgb(28,57,70);
+    color: white;
+    padding: 75px;
+    margin-top: 150px;
+}
+
+.strong-title {
+    color: white;
+}
+
+#state {
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+
+#state:hover {
+    background-color: #c45f37;
+    color: white; }
+
+.weatherBtn {
+    background-color: #3273dc;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.5s;
+    border-style: none;
+}
+
+.weatherBtn:hover {
+    background-color: #265488;
+    color: white; 
+}
+
+.parkBtn:active {
+    box-shadow: 0 0 0 2px black inset;
+}
+
+.parkBtn {
+    background: white;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: black;
+    cursor: pointer;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+
+.parkBtn:hover {
+    opacity: 0.8;   
+}
+
+#state-code {
+    border: 1px solid black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.6s;
+}
+#state-code:hover {
+    background-color: #c45f37;
+    color: white; 
+}
+
+.modal-card-head, .modal-card-title{
+    background-color: rgb(23, 44, 71);
+    color: white;
+}
+
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-card {
+    width: 80%;
+}
+
+.modal-card-body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+@media screen and (max-width: 768px) {
+    #parks-list, .modal-card-body, .historyBtn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+    }
+}

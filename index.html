@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Fresh Air Finder</title>
+</head>
+
+<body>
+
+  <section class="hero is-halfheight">
+    <h1 class="title">
+      Fresh Air Finder
+    </h1>
+    <h2 class="subtitle">Find Your States National Parks</h2>
+    <div class="hero-body">
+      <div class="">
+        <div class="field has-addons">
+          <div class="control has-icons-left center-align">
+            <div class="select">
+              <select id="state-code">
+                <option class="input" id="state" type="text" selected>Select State</option>
+                <option>AL</option>
+                <option>AK</option>
+                <option>AS</option>
+                <option>AZ</option>
+                <option>AR</option>
+                <option>CA</option>
+                <option>CO</option>
+                <option>CT</option>
+                <option>DE</option>
+                <option>FL</option>
+                <option>GA</option>
+                <option>HI</option>
+                <option>ID</option>
+                <option>IL</option>
+                <option>IN</option>
+                <option>IA</option>
+                <option>KS</option>
+                <option>KY</option>
+                <option>LA</option>
+                <option>ME</option>
+                <option>MD</option>
+                <option>MA</option>
+                <option>MI</option>
+                <option>MN</option>
+                <option>MS</option>
+                <option>MO</option>
+                <option>MT</option>
+                <option>NE</option>
+                <option>NV</option>
+                <option>NH</option>
+                <option>NJ</option>
+                <option>NM</option>
+                <option>NY</option>
+                <option>NC</option>
+                <option>ND</option>
+                <option>OH</option>
+                <option>OK</option>
+                <option>OR</option>
+                <option>PA</option>
+                <option>RI</option>
+                <option>SC</option>
+                <option>SD</option>
+                <option>TN</option>
+                <option>TX</option>
+                <option>UT</option>
+                <option>VT</option>
+                <option>VA</option>
+                <option>WA</option>
+                <option>WV</option>
+                <option>WI</option>
+                <option>WY</option>
+              </select>
+            </div>
+            <h2><a class="director" href="#test">Take me to the parks</a></h2>
+            <h2 class="recentSearches"> Recent Searches</h2>
+            <button class="reset">Clear Searches</button>
+            <div id="history" class="history"></div>
+            <span class="icon is-medium is-left">
+              <i class="fas fa-globe"></i>
+            </span>
+          </div>
+          <div class="control">
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- for the list of parks -->
+  <section class="tile is-vertical sectionCenter is-12" id="test">
+    <div id="parks-list">
+      <h3 id="list-section"></h3>
+      <ul>
+      </ul>
+    </div>
+
+    <!-- for the main tile -->
+    <div class="tile is-ancestor park-name">
+      <div class="tile is-vertical">
+        <div class="tile">
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-info middle-tile" id="middle">
+              <p class="parkTitle"></p>
+              <figure id="middle-image">
+                <img width="700" height="600"
+                  src="https://images.unsplash.com/photo-1484255801137-e15347403a20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80">
+              </figure>
+              <p class="parkDescription"></p>
+              <!-- for the address and phone number tile -->
+              <div class="tile is-parent bottom-tile">
+                <article class="tile is-child contact-info" id="contactInfo">
+                  <p class="" id="address"></p>
+                  <p class="" id="phoneNumber"></p>
+                  <a href="" class="" id="webSite"></a>
+                  <div class="content">
+                    <!-- Content -->
+                  </div>
+                </article>
+              </div>
+            </article>
+          </div>
+        </div>
+
+
+      </div>
+  </section>
+  <!-- modals for the list of national parks -->
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">5 Day Weather Forcast</p>
+        <button class="delete" aria-label="close" id="closeModal"></button>
+      </header>
+      <section class="modal-card-body" id="modal-body">
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong class="strong-title">Fresh Air Finder</strong> by <a href="https://github.com/erenozgur98"
+          target="blank">Eren Ozgur</a> , <a href="https://github.com/HurleySquared" target="blank">Eric Hurley</a>, <a
+          href="https://github.com/ihm57511" target="blank">Ian
+          McBrayer</a>, <a href="https://github.com/dylanjacobb" target="blank">Dylan Jacob</a> . Visit the <a
+          href="https://www.npca.org/" target="blank">National Park Conservation Association</a> to aid in the
+        preservation of our
+        National Parks.
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
