@@ -260,6 +260,12 @@ li {
 .modal-card {
     width: 80%;
     max-width: 1448px;
+    border: 1px solid rgba(0, 0, 0, 0.619);
+    border-radius: 12px;
+}
+
+.modal-background {
+    background-color: #00000099;
 }
 
 .modal-card-body {
@@ -268,7 +274,12 @@ li {
     align-items: baseline;
 }
 
-@media screen and (max-width: 400px) {
+.modal-card-title {
+    color: white;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 500px) {
     .recentSearches {
         margin-top: 40px;
         font-size: 16px;
@@ -321,12 +332,19 @@ li {
         display: flex;
         flex-wrap: wrap;
     }
+    .middle-tile {
+        border-radius: 0%;
+    }
 }
-/* @media screen and (max-width: 397px) {
+@media screen and (max-width: 397px) {
     .divHistory {
         max-width: 370px;
     }
     .parkBtn {
         width: 250px;
     }
-} */
+    .card-content {
+        margin-bottom: 0px;
+        overflow: auto;
+    }
+}
