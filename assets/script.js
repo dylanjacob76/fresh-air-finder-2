@@ -66,7 +66,7 @@ function createList(parksData) {
         var park = parksData[i];
         var li = $('<li>');
         var button = $('<button type="button" class="parkBtn is-8">' + park.fullName + '</button>'
-            + "     " + '<button type="button" class="weatherBtn">Get Weather</button>');
+            + "     " + '<button type="button" class="weatherBtn">Weather</button>');
         if (park.images.length) {
             button.data('image', park.images[0].url);
         } else {

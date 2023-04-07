@@ -62,11 +62,9 @@ body {
 
 /* style for the history div */
 .history {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 20%;
-    margin: 0 auto;
+    max-width: 375px;
+    overflow: auto;
+    margin: 12px 12px 0 12px;
 }
 
 .divHistory {
@@ -79,14 +77,14 @@ body {
 .historyBtn {
     color: black;
     margin: 4px;
+    border-top-right-radius: 0%;
 }
 
 /* style for recent searches */
 .recentSearches {
     text-align: center;
-    border-bottom:rgb(19, 48, 57) solid;
     font-size: 24px;
-    margin: 8px;
+    margin-top: 60px;
 }
 
 /* style for reset button */
@@ -94,6 +92,7 @@ body {
     font-size: 12px;
     border-radius: 8px;
     padding: 8px;
+    border: .5px solid black;
 }
 
 /* changes the main header background image */
@@ -105,16 +104,34 @@ body {
     height: 100vh;
 }
 
+.park-info {
+    display: flex;
+    justify-content: center;
+}
+
 .middle-tile {
     background-image: url('https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
     background-size: cover;
     background-position: center;
+    max-width: 800px;
     padding: 100px;
+    border-radius: 12%;
 }
 
-#middle-image {
+.parkTitle {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+/* #middle-image {
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 200px;
+} */
+
+.park-image {
+    width: 600px;
 }
 
 .bottom-tile {
@@ -127,11 +144,10 @@ body {
 }
 
 #parks-list {
-    width: 100%;
-    margin-bottom: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin: 50px 0 100px 0;
 }
+
+
 
 li {
     padding: 2px;
@@ -145,10 +161,18 @@ li {
 
 .footer {
     margin-top: 50px;
-    background-color: rgb(28,57,70);
+    background-color: rgba(28, 57, 70, 0.814);
     color: white;
     padding: 75px;
     margin-top: 150px;
+}
+
+.authors {
+    color: #c45f37;
+}
+
+.authors:hover {
+    color: #a14e2e;
 }
 
 .strong-title {
@@ -179,6 +203,7 @@ li {
     border-bottom-right-radius: 20px;
     transition: 0.5s;
     border-style: none;
+    height: auto;
 }
 
 .weatherBtn:hover {
@@ -197,6 +222,7 @@ li {
     padding: 5px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    width: 300px;
     color: black;
     cursor: pointer;
     padding-left: 10px;
@@ -241,12 +267,16 @@ li {
     align-items: baseline;
 }
 
-@media screen and (max-width: 768px) {
-    #parks-list, .modal-card-body, .historyBtn {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
+@media screen and (max-width: 400px) {
+    .recentSearches {
+        margin-top: 40px;
+        font-size: 16px;
+    }
+    .reset {
+
+    }
+    .parkDescription {
+        width: 300px;
+        text-align: center;
     }
 }
