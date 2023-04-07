@@ -3,21 +3,11 @@
 ## Description
 We first structured the website and styling with the CSS framework ***Bulma***.  Utilizing the National Park Service API and OpenWeather API we built an application that will display National Parks with a 5-Day Forecast to match for each park.  Upon selecting a state from the drop down, you will be shown a list of the parks coordinating with that state.  Next to the park, there is a button to display the weather in a modal.  Below said list will be an image from the park, a description of the park, and some contact info for that park with a link to the parks website. Each state you select will be saved to local storage and shown as a button that will take you to that list of parks for that state.
 
-## Link to presentation
-[Presentation](https://docs.google.com/presentation/d/1Cy2ssrhj3EU_6f9QX829LpBUOPr-uF0yqMa5GikA6rs/edit?usp=sharing)
+## Demo
 
-## Acceptance Criteria
-```
-Application uses at least two server-side APIs.
+Quick demo of the application and it's features!
 
-Application uses client-side storage to store persistent data.
-
-Application doesn't use JS alerts, prompts, or confirms (uses modals instead).
-
-Application uses a CSS framework other than Bootstrap.
-
-Application is interactive (accepts and responds to user input)
-```
+<img src="./images/fresh-air-finder-demo.gif" alt="fresh air finder demo" width="900">
 
 ## Technologies Used
 - [CSS FRAMEWORK: Bulma](https://bulma.io/)
@@ -38,13 +28,10 @@ Application is interactive (accepts and responds to user input)
 - [Deployed Application](https://dylanjacob76.github.io/fresh-air-finder-2/)
 
 ## Screenshots of Application
-![Homepage](https://github.com/dylanjacobb/fresh-air-finder/blob/main/images/homepage-new.png)
-![Parks](https://github.com/dylanjacobb/fresh-air-finder/blob/main/images/list-of-parks-new.png)
-![Descriptions](https://github.com/dylanjacobb/fresh-air-finder/blob/main/images/park-description-new.png)
-![Weather Modal](./images/weather-modal.png)
+
 
 ## Team's GitHub Accounts
-- [Ian McBrayer](https://github.com/ihm57511)
 - [Dylan Jacob](https://github.com/dylanjacob76)
 - [Yigit Eren Ozgur](https://github.com/erenozgur98)
 - [Eric Hurley](https://github.com/HurleySquared)
+- [Ian McBrayer](https://github.com/ihm57511)
