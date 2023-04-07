@@ -39,15 +39,22 @@ function getWeather(postalCode) {
 
 function createCard(weatherObject) {
     var day = $('<h4>').text(moment.unix(weatherObject.dt).format("ddd-MMM Do"));
-    var temp = $('<p>').text("Temp: " + weatherObject.main.temp + "F");
-    var wind = $('<p>').text("Wind: " + weatherObject.wind.speed + "mph");
-    var humid = $('<p>').text("Humidity: " + weatherObject.main.humidity + "%");
+    $(day).addClass(('modal-day'));
+    var temp = $('<p>').text("Temp: " + weatherObject.main.temp + "F ");
+    $(temp).addClass(('modal-temp'));
+    var wind = $('<p>').text("Wind: " + weatherObject.wind.speed + "mph ");
+    $(wind).addClass(('modal-wind'));
+    var humid = $('<p>').text("Humidity: " + weatherObject.main.humidity + "% ");
+    $(humid).addClass(('modal-humid'));
     var icon = "<img src=http://openweathermap.org/img/w/" + weatherObject.weather[0].icon + ".png />";
     var cardBody = $('<div>').addClass('card card-content content wrap p-1');
-    var messageBad = $('<h4>').text("Maybe Tomorrow").css("color", "red");
+    var messageBad = $('<h4>').text("Not today!").css("color", "red");
+    $(messageBad).addClass('modal-message');
     var messageEh = $('<h4>').text("Cloudy but Dry").css("color", "orange");
+    $(messageEh).addClass('modal-message');
     var messageGood = $('<h4>').text("Fresh Air!").css("color", "green");
-    $('.modal-card-body').append(cardBody.append(day, temp, wind, humid, icon));
+    $(messageGood).addClass('modal-message');
+    $('.modal-card-body').append(cardBody.append(day, temp, wind, humid));
     if (weatherObject.weather[0].id === 800) {
         cardBody.append(messageGood);
     } else if (weatherObject.weather[0].id > 800) {
@@ -55,6 +62,7 @@ function createCard(weatherObject) {
     } else {
         cardBody.append(messageBad);
     }
+    $('.modal-card-body').append(cardBody.append(icon));
 
 
 }

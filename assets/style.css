@@ -247,7 +247,7 @@ li {
 
 .modal-card-head, .modal-card-title{
     background-color: rgb(23, 44, 71);
-    color: white;
+    color: rgba(255, 255, 255, 0.709);
 }
 
 .center-align {
@@ -259,6 +259,7 @@ li {
 
 .modal-card {
     width: 80%;
+    max-width: 1448px;
 }
 
 .modal-card-body {
@@ -272,11 +273,60 @@ li {
         margin-top: 40px;
         font-size: 16px;
     }
-    .reset {
-
-    }
     .parkDescription {
         width: 300px;
         text-align: center;
     }
+    .footer {
+        background-color: rgba(28, 57, 70, 0.814);
+        color: white;
+        padding: 12px;
+        margin-top: 150px;
+        font-size: 16px;
+    }
+    .modal-card-body {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .modal-day {
+        width: 100%;
+        text-align: center;
+    }
+    .modal-temp {
+        width: 50%;
+    }
+    .modal-wind {
+        width: 50%;
+    }
+    .modal-humid {
+        width: 50%;
+    }
+    .modal-message {
+        width: 30%;
+    }
+    .card-content img {
+        width: 40px;
+        height: 33px;
+    }
+    .modal-card {
+        margin-right: 72px;
+    }
+    .card-content {
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
+/* @media screen and (max-width: 397px) {
+    .divHistory {
+        max-width: 370px;
+    }
+    .parkBtn {
+        width: 250px;
+    }
+} */
